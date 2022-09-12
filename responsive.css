@@ -1,0 +1,162 @@
+@media screen and (max-width:769px){
+    .right-top-bar h3 {
+        font-size: 1.32rem;
+    }
+    
+    .right-top-bar p {
+        padding-bottom: .1em;
+        padding-top: .1rem;
+    }
+    
+    .certified-award-left {
+        width: 100%;
+        height: 5vh;
+        padding-top: .1em;
+    }
+    
+    .certified-awared-right {
+        padding-bottom: .1em;
+    
+    
+    }
+    
+    .certified-awared-right h3 {
+        font-size: 1.3rem;
+        padding-top: .51em;
+    }
+    
+  
+    
+    .certified-awared-right p {
+        font-size: .91rem;
+    }
+    .hero-left-box {
+        width: 78%;
+}
+section.average-business-section{
+    height: auto;
+}
+.average-business-box.d-flex {
+    height: auto!important;
+}
+
+
+
+.left-average-business h1 {
+    font-size: 1.9rem;
+}
+
+.left-average-business h6 {
+    font-size: 1rem;
+    height: auto;
+}
+
+.left-average-business p {
+    font-size: .91rem;
+    color: #363431e0;
+}
+
+section.achieve-section {
+    height: auto;
+}
+
+.achive-left-side h4 {
+    font-size: 1.42rem;
+    text-align: justify;
+}
+
+.achive-left-side p {
+    font-size: .81rem;
+    text-align: justify;
+}
+
+.discover-button {
+    width: auto;
+    padding-left: .53em;
+    padding-right: .53em;
+}
+
+.achive-left-side {
+    align-content: center;
+    padding-right: 1em;
+}
+
+.row.achieve-box {
+    padding-left: 1vw;
+}
+
+.achive-right-side .card {
+    height: auto;
+}
+
+
+
+span.circle h3 {
+    height: 7vh;
+    width: 28%;
+    position: relative;
+    content: '';
+    left: 1.3em;
+}
+
+.achive-right-side .card i {
+    padding-bottom: .3em;
+}
+
+.achive-right-side .card h6 {
+    font-size: 1.1rem;
+}
+.chamber-of-commerce-industry-box {
+    height: auto;
+    padding-bottom: 2em;
+}
+section.chamber-of-commerce-industry {
+    height: auto;
+}
+.search {
+    width: 100%;
+    border: none;
+}
+
+.call-any-time-button {
+}
+
+.menu-nav-right {
+    width: auto;
+    display: list-item;
+    text-align: -webkit-center;
+}
+
+ul.navbar-nav {
+    place-items: center;
+    width: auto;
+}
+
+}
+
+
+
+
+@media screen and (max-width:340px){
+
+
+
+.search {
+    width: 100%;
+    border: none;
+}
+
+.call-any-time-button {
+}
+
+.menu-nav-right {
+    width: auto;
+    display: list-item;
+    text-align: -webkit-center;
+}
+
+ul.navbar-nav {
+    place-items: center;
+    width: auto;
+}
+}

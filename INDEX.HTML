@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <link rel="icon" type="image" href="/images/favicon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/be98f66bcc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="app.js"></script>
+    <title> BUSICO </title>
+    <link rel="icon" type="image/x-icon" href="image/favicon.png">
+
+
+    <!-- slider css -->
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+</head>
+<body style="background-color: #FEFEFE;"> 
+
+    <header class="header-section">
+        <!--top bar-->
+    <div class="top-bar d-flex justify-content-center justify-content-md-between ">
+        <div class="container d-flex">
+            <div class="contact-info mr-auto">
+              <p class="top-left-border">
+                <i class="fa fa-telegram fab"></i>
+            <span>mail@domain.com</span>
+             
+              </p>
+              <p>
+                <!-- <i class="fa fa-location-pin"></i> -->
+        <span>jonal street, New York, USA</span>
+         
+          </p>
+            </div>
+            <div class="social">
+                <i class="fa fa-facebook fb"></i>
+                 <i class="fab fa-twitter fb"></i>
+            
+           
+                <i class="fa fa-instagram fb"></i>
+                  <i class="fab fa-linkedin fb"></i>
+               
+    
+            </div>
+           
+        </div>
+    </div>
+<!-- nav bar -->
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <span> <img src="image/favicon.png" alt=""></span><h1 class="company-name">BUSICO <span> multiple business</span></h1>
+     </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse"  id="collapsibleNavbar">
+
+  
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">home <span>+</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">pages <span>+</span></a>
+            </li>
+  
+               <li class="nav-item">
+              <a class="nav-link" href="#">news</a>
+            </li>
+               <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+            
+          </ul>
+  
+  
+         
+       
+  
+   
+    
+   
+        <div class="menu-nav-right">
+          <!-- search -->
+          <div class="search">
+            <button class="openBtn" onclick="openSearch()"> <i class="fa fa-search"></i></button>
+                
+      <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+          <form action="/action_page.php">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      
+            </div>
+         
+      <div class="call-any-time-button">
+      <p class="for-support">
+        <span>call for support</span><br>
+        <span>+ 282 350 360</span>
+      </p>
+      </div>
+      </div>
+      
+
+
+
+    </div>
+    
+  </div>
+  
+</nav>
+
+
+
+
+
+
+
+<!-- 
+<nav class="navbar navbar-expand-sm  navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+       <span> <img src="image/favicon.png" alt=""></span><h1 class="company-name">BUSICO <span> multiple business</span></h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">home <span>+</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">pages <span>+</span></a>
+          </li>
+
+             <li class="nav-item">
+            <a class="nav-link" href="#">news</a>
+          </li>
+             <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+          
+        </ul>
+
+
+       
+
+
+      </div>
+
+   
+     
+
+    </div>
+    
+          <div class="menu-nav-right">
+              <!-- search 
+              <div class="search">
+                <button class="openBtn" onclick="openSearch()"> <i class="fa fa-search"></i></button>
+                    
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          
+                </div>
+             
+    <div class="call-any-time-button">
+        <p class="for-support">
+            <span>call for support</span><br>
+            <span>+ 282 350 360</span>
+        </p>
+    </div>
+          </div>
+  </nav>
+   -->
+
+</header>
+
+
+<section class="hero_section">
+    <div class="container">
+
+    <div class="row">
+
+<div class="col-md-5">
+  <div class="hero-left">
+    <img src="image/hero-img.jpg" alt="">
+    <div class="hero-left-box"> <h6>2500+ <br> Customer Worldwide </h6> </div>
+</div>
+</div>
+
+
+
+<div class="col-md-1">
+  <div class="hero-border">  
+    <div class="hero-border-bottom"></div>
+          
+        </div>
+
+</div>
+<div class="col-md-6">
+
+ 
+   
+  <div class="hero-right">
+
+    <div class="right-top-bar">
+      <h6 >25 YEARS OF EXPERIENCE</h6>
+      <H3>We help IT companies engineering capacity scale</H3>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, nemo deleniti cupiditate mollitia asperiores iusto molestias rerum laborum corporis fuga eum repudiandae quia incidunt expedita, vel ullam, molestiae soluta cum.</p>
+
+
+    </div>
+
+ 
+
+
+      <div class="right-side-bottom">
+        <div class="row">
+          <div class="certified-award">
+          <div class="col-md-1">
+            <div class="certified-award-left">
+            <i class="fa fa-check"></i>
+        </div>
+      </div>
+          <div class="col-md-11">
+            <div class="certified-awared-right">
+
+
+              <h3>certified company</h3>
+              <p>Lorem ipsum dolor sia necessitatibus tempora eos ab numquam quis,  maiores, modi libero est omnis.</p>
+               
+      
+      
+      </div>
+             </div>
+          </div>
+        </div>
+
+
+  
+
+       
+          <div class="row">
+            <div class="certified-award">
+            <div class="col-md-1">
+              <div class="certified-award-left">
+              <i class="fa fa-check"></i>
+          </div>
+        </div>
+            <div class="col-md-11">
+              <div class="certified-awared-right">
+  
+  
+                <h3>certified company</h3>
+                <p>Lorem ipsum dolor sia necessitatibus tempora eos ab numquam quis,  maiores, modi libero est omnis.</p>
+                 
+        
+        
+        </div>
+               </div>
+            </div>
+          </div>
+
+
+    
+        <!-- <div class="certified-award">
+            <div class="certified-award-left">
+                <i class="fa fa-check"></i>
+            </div>
+       <div class="certified-awared-right">
+
+
+        <h3>certified company</h3>
+        <p>Lorem ipsum dolor sia necessitatibus tempora eos ab numquam quis,  maiores, modi libero est omnis.</p>
+         
+
+
+
+       </div>
+    </div>
+        -->
+   
+    <!-- <div class="certified-award">
+      <div class="certified-award-left">
+          <i class="fa fa-check"></i>
+      </div>
+ <div class="certified-awared-right">
+
+
+  <h3>certified company</h3>
+  <p>Lorem ipsum dolor sitg elit. sitatibus tempora eos ab numquam quis,  maiores, modi libero est omnis.</p>
+   
+
+
+
+ </div>
+
+ 
+
+
+
+    </div> -->
+
+
+
+</div>
+   </div>
+
+
+
+
+</div>
+
+
+
+    </div>
+     
+    
+      
+
+   
+    </div>
+</section>
+
+
+<!--start average business section -->
+
+<section class="average-business-section">
+
+  <div class="container">
+   
+<div class="average-business-box  d-flex">
+  <div class="left-average-business">
+   
+    <div class="left-average-title-border">
+    <h3></h3>
+    <h6> Meet average professions</h6>
+    </div>
+    <h1> <span>commited to</span> your business</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quod eaque reiciendis voluptate id eligendi illum adipisci blanditiis in, officia recusandae ex modi mollitia, delectus deleniti aliquam hic! Laudantium, dolorum.
+    </p>
+    
+    <button class="all-button">view our portfolio</button>
+    
+    </div>
+    
+    <div class="right-average-picture">
+    <img src="image/profession.jpg" alt="">
+    </div>
+</div>
+
+
+
+
+  </div>
+  
+</section>
+
+
+<!-- chamber info -->
+<section class="chamber-of-commerce-industry">
+
+<div class="container">
+
+<div class="chamber-of-commerce-industry-box">
+
+  <div class="row">
+    <div class="col-7">
+      <div class="chamber-of-commerce-industry">
+      <h3 >
+Dhaka chamber of commerce & industry
+      </h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea praesentium itaque mollitia atque quod quis, voluptatum quo officiis incidunt veritatis i m dolor sit amet consectetur adipisicing elit. Ea praesentium itaque mollitia atque quod quis, voluptatum quo officiis incidunt veritatis i ste quae excepturi dolorum harum modi voluptatibus omnis ullam libero!
+      </p>
+      
+
+    </div>
+    </div>
+    <div class="col-5">
+     <div class="chamber-of-commerce-right-side">
+      <img src="image/dhaka-chamber-of commerce.jfif" alt=""><br>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas accusantium repellat sint quam, recusandae eius quae suscipit nesciunt hic. Asperiores?</p>
+   
+     </div>
+    
+    </div>
+    <button class="all-button">read more</button>
+  </div>
+
+
+</div>
+
+
+
+  
+</div>
+
+</section>
+<!--end chamber info -->
+
+
+
+<!-- our achieve -->
+
+
+<section class="achieve-section">
+  <div class="container">
+    <div class="row achieve-box">
+
+      <div class="col-md-5">
+      <div class="achive-left-side">
+      
+      <div class="achive-heading">
+       <h4></h4>
+        <h1>  What we do</h1>
+
+      </div>
+        <h4>Does more then ever platform to achieve goal stages.</h4>
+   <p>wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection.</p>
+
+    
+        <button class="btn discover-button">Discover now</button>
+    </div>
+   
+      </div>
+
+
+
+      <div class="col-md-7">
+
+<div class="achive-right-side">
+ 
+  <div class="row">
+    <div class="col-md-6">
+     
+      
+      <div class="card">
+        <div class="card-body">
+          <span class="circle"><h3></h3></span>
+        <i class="fa fa-database"></i>
+       <h6>data traking</h6>
+      <p>abode words began enjoy years no do no. tried spoil as heart visit.</p>
+      </div>
+    </div>
+
+    </div>
+    <div class="col-md-6">
+
+      <div class="card">
+        <div class="card-body">
+          <span class="circle"><h3></h3></span>
+
+          <i class="fa fa-newspaper"></i>
+       <h6>branding</h6>
+      <p>abode words began enjoy years no do no. tried spoil as heart visit.</p>
+      </div>
+    </div>
+      </div>
+
+
+    </div>
+
+
+  <div class="row">
+
+    <div class="col-md-6">
+
+      <div class="card">
+        <div class="card-body">
+          <span class="circle"><h3></h3></span>
+
+        <i class="fa fa-newspaper"></i>
+       <h6>press releases</h6>
+      <p>abode words began enjoy years no do no. tried spoil as heart visit.</p>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+ 
+      <div class="card">
+        <div class="card-body">
+          <span class="circle"><h3></h3></span>
+
+          <i class="fa fa-database"></i>
+
+       <h6>marketing</h6>
+      <p>abode words began enjoy years no do no. tried spoil as heart visit.</p>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+
+</section>
+
+
+<!-- activities section -->
+
+<section class="activities-section">
+  <div class="container">
+      <div class="activities-top">
+        <h3>welcome to metropolitan chamber of commerce and industry, dhaka (MCCI) </h3>
+     
+     <P>FOUNDED IN 1904, THE METROPOLITAN CHAMBER OF COMMERCE AND INDUSTRY, DHAKA (MCCI) is the oldest and the pre-eminent trade organization of bangladesh</P>
+      </div>
+    </div>
+      <div class="all-activities">
+        <div class="container">
+            <div class="row activities-button">
+              <div class="col-md-9">
+<h6>activities</h6>
+              </div>
+              <div class="col-md-3  ">
+                <button class="all-activities-button">all activities</button>
+              </div>
+
+            </div>
+
+            <div class="activities-images">
+              <div class="row">
+                <div class="col-md-4"><img src="image/activities1.jpeg" alt=""></div>
+                <div class="col-md-4"><img src="image/activities2.jpeg" alt=""></div>
+                <div class="col-md-4"><img src="image/activities3.jpeg" alt=""></div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-4"><img src="image/activities3.jpeg" alt=""></div>
+                <div class="col-md-4"><img src="image/activities4.jpeg" alt=""></div>
+                <div class="col-md-4"><img src="image/activities5.jpeg" alt=""></div>
+              </div>
+
+            </div>
+
+
+      </div>
+    </div>
+   
+</section>
+
+
+
+
+<!--end activities section -->
+
+<!-- grow with client  -->
+<section class="client-trust-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 client-trust-left-image" >
+
+      </div>
+      <div class="col-md-6">
+
+<div class="client-trust-right-side">
+
+      
+      <div class="client-trust-right-side-heading">
+       <h4></h4>
+        <h6>  growing with our clients</h6>
+
+      </div>
+        <h4 class="client-trust-title"> <span>25 Years of</span> your trust</h4>
+   <p>wooded ladies she basket season age her uneasy saw. Discourse unwilling am no described dejection.</p>
+
+</div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- director section -->
+
+<section class="director-section">
+
+
+
+  <div class="container">
+    <div class="director-heading">
+      <h1>Board of Directors</h1>
+    </div>
+    <div class="swiper card_slider">
+      <div class="swiper-wrapper">
+        <!-- slide 1 -->
+        <div class="swiper-slide">
+          <div class="img_box">
+            <img src="image/director/director1.jpg" alt="">
+            <h6>mr.md.saiful islam</h6>
+          <p>president</p>
+          </div>
+        </div>
+  
+  
+       <!-- slide 2 -->
+       <div class="swiper-slide">
+        <div class="img_box">
+          <img src="image/director/director2.jpg" alt="">
+          <h6>Mr.kamran T.Rahman</h6>
+        <p>Senior vice-president</p>
+        </div>
+      </div>
+  
+  
+           <!-- slide 3 -->
+           <div class="swiper-slide">
+            <div class="img_box">
+              <img src="image/director/director3.jpg" alt="">
+              <h6>Mr.Habibullah N.Karim</h6>
+            <p>Vice-President</p>
+            </div>
+          </div>
+          
+  
+               <!-- slide 4 -->
+               <div class="swiper-slide">
+                <div class="img_box">
+                  <img src="image/director/director4.jpg" alt="">
+                  <h6>Mr.Syed Tareque Md.Aki</h6>
+                <p>Managing Director</p>
+                </div>
+              </div>
+  
+  
+             <!-- slide 5 -->
+             <div class="swiper-slide">
+              <div class="img_box">
+                <img src="image/director/director5.jpg" alt="">
+                <h6>Mr. Mohammad Naser Ezaz Bijoy</h6>
+            
+              <p> Chief Executive Officer</p>
+              </div>
+            </div>
+            
+                 <!-- slide 6 -->
+                 <div class="swiper-slide">
+                  <div class="img_box">
+                    <img src="image/director/director6.jpg" alt="">
+                    <h6>Mr. Tapan Chowdhury</h6>
+                  
+                  <p> Managing Director</p>
+                  </div>
+                </div>
+  
+  
+             <!-- slide 7 -->
+             <div class="swiper-slide">
+              <div class="img_box">
+                <img src="image/director/director7.jpg" alt="">
+                <h6>Mrs. Uzma Chowdhury</h6>
+              <p>Director</p>
+              </div>
+            </div>
+  
+                 <!-- slide 8 -->
+                 <div class="swiper-slide">
+                  <div class="img_box">
+                    <img src="image/director/director8.jpg" alt="">
+                    <h6>Dr. Arif Dowla</h6>
+                  <p> Managing Director</p>
+                  </div>
+                </div>
+  
+  
+             <!-- slide 9 -->
+             <div class="swiper-slide">
+              <div class="img_box">
+                <img src="image/director/director9.jpg" alt="">
+                <h6>Mr. Rubaiyat Jamil</h6>
+              <p> Managing Director</p>
+              </div>
+            </div>
+  
+            
+                 <!-- slide 10 -->
+                 <div class="swiper-slide">
+                  <div class="img_box">
+                    <img src="image/director/director10.jpg" alt="">
+                    <h6>Ms. Nihad Kabir</h6>
+         
+                  <p>Senior Partner</p>
+                  </div>
+                </div>
+
+
+       <!-- slide 11 -->
+      <div class="swiper-slide">
+        <div class="img_box">
+          <img src="image/director/director1.jpg" alt="">
+          <h6>Anis A. Khan</h6>
+        <p>Director</p>
+        </div>
+      </div>
+  
+  
+      </div>
+  
+      
+    </div>
+    <div class="swiper-pagination" style="color:white ;"></div>
+  
+  </div>
+  
+
+  
+</section>
+
+
+
+
+
+
+
+
+
+<!-- grow with client  -->
+
+    
+
+
+
+
+<!-- footer -->
+
+
+<footer class="footer-section">
+ 
+    <div class="footer-row">
+      <div class="container">
+      <div class="row">
+        <div class="col-md-2"style="   align-self: center; "><img src="https://mccibd.org/wp-content/uploads/2021/08/mcci-logo-white.png" alt="MCCI"  width="135" height="70"></div>
+        <div class="col-md-6">
+
+          <aside class="contact-info"><h3 class="widget-title">Contact Us</h3> <div class="contact-info">
+            <ul class="contact-details">
+            <li>
+              <i class="far fa-dot-circle" aria-hidden="true"></i> <h6><strong>Address:</strong> <span>Chamber Building (4th Floor), 122-124, Motijheel CA, Dhaka-1000, Bangladesh</span></h6></li>
+               <li>
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> <h6><strong>Phone:</strong> <span>( 880 ) 2 - 223385208-11, ( 880 ) 2 -223354129-31, (880) 2 223388435</span></h6></li>
+                 <li>
+                  <i class="far fa-envelope" aria-hidden="true"></i> <h6><strong>Email:</strong> <span><a href="mailto:sg@mccibd.org">sg@mccibd.org</a></span></h6>  </li> 
+                  <li>
+                    <i class="far fa-clock" aria-hidden="true"></i>  <h6><strong>Working Days/Hours:</strong> <span>Sun - Thu / 8:30 AM - 5:30 PM</span></h6> </li> 
+                  </ul>
+            </div>
+            </aside>
+
+
+        </div>
+        <div class="col-md-4">
+
+          <aside class="contact-info-2nd"><h3 class="widget-title">2nd Office</h3>
+         
+            <ul class="contact-details-2nd">
+            <li>
+              <i class="far fa-dot-circle"></i> <h6><strong>Address:</strong> <span>Police Plaza Concord, Tower-2, Level-6, Gulshan-1, Dhaka.</span></h6></li>
+             </ul>
+
+            </aside>
+
+            <aside id="follow-us" class="follow-us"><h3>Follow Us</h3> 
+              <div class="share-links">
+             
+                <div class="social">
+                  <i class="fa fa-facebook fb"></i>
+                   <i class="fab fa-twitter fb"></i>
+              
+             
+                  <i class="fa fa-instagram fb"></i>
+                    <i class="fab fa-linkedin fb"></i>
+                 
+      
+              </div>
+            
+            
+            </div>
+              </aside>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="footer-bottom">
+    <div class="container">
+    <div class="footer-center">
+    <span class="footer-copyright">© copyright 2021. All Rights Reserved. Design and Developed by <a href="https://www.webtechnosoft.com" target="_blank">Web Techno Soft</a></span> </div>
+    </div>
+    </div>
+
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+    <script>
+    function openSearch() {
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function closeSearch() {
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+
+
+<!-- for slider -->
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".card_slider", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+       autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          340: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+    });
+  </script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
