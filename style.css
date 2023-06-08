@@ -430,13 +430,11 @@ button.all-button {
 
 section.chamber-of-commerce-industry {
     width: 100%;
-    height: 65vh;
+    height: 100vh;
     padding-top: 4em;
     box-shadow: 0 14px 2em -1em #888888b5;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
-
-
 
 
 .chamber-of-commerce-industry {
@@ -489,10 +487,11 @@ section.chamber-of-commerce-industry .col-3 img {
 
  /* our achieve  */
 
-section.achieve-section {
+ section.achieve-section {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: white;
+    margin-bottom: 2em;
 }
 
 .row.achieve-box {
@@ -891,11 +890,13 @@ aside#follow-us-widget-2 {
     padding-left: 0em!important;
 }
 
+
 .footer-bottom {
     width: auto;
-    height: 11vh;
+    height: auto;
     text-align: center;
     padding-top: 1.4em;
+    padding-bottom: 1em;
     color: white;
     font-weight: bold;
     background-color: #25247B;
