@@ -13,7 +13,19 @@
         height: 5vh;
         padding-top: .1em;
     }
-    
+
+
+    .contact-info.mr-auto {
+        display: flex;
+        align-items: flex-end;
+        width: 99%;
+        justify-content: center;
+    }
+
+.social {
+    display: none;
+
+}
     .certified-awared-right {
         padding-bottom: .1em;
     
@@ -33,6 +45,13 @@
     .hero-left-box {
         width: 78%;
 }
+
+
+.hero-border {
+    display: none;
+}
+
+
 section.average-business-section{
     height: auto;
 }
@@ -72,8 +91,9 @@ section.achieve-section {
 
 .discover-button {
     width: auto;
-    padding-left: .53em;
-    padding-right: .53em;
+    padding-left: 0.53em;
+    padding-right: 0.53em;
+    margin-bottom: 1em;
 }
 
 .achive-left-side {
@@ -90,15 +110,13 @@ section.achieve-section {
 }
 
 
-
 span.circle h3 {
     height: 7vh;
-    width: 28%;
+    width: 14%;
     position: relative;
     content: '';
-    left: 1.3em;
+    left: 1em;
 }
-
 .achive-right-side .card i {
     padding-bottom: .3em;
 }
@@ -132,6 +150,16 @@ ul.navbar-nav {
     width: auto;
 }
 
+ul.navbar-nav {
+    align-items: center;
+    margin-bottom: 2em;
+}
+.call-any-time-button{
+
+display: none;
+
+}
+
 }
 
 
@@ -159,4 +187,20 @@ ul.navbar-nav {
     place-items: center;
     width: auto;
 }
+.top-bar.d-flex.justify-content-center.justify-content-md-between {
+    display: none!important;
+}
+button.all-button {
+    background: #022d6e;
+    COLOR: WHITE;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: math;
+    width: auto;
+    border: white;
+    border-radius: 1em;
+    margin-left: 0.3em;
+}
+
+
 }
